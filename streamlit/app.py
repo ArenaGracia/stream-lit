@@ -10,7 +10,7 @@ model = joblib.load("streamlit/model.joblib")
 le = joblib.load("streamlit/le.joblib")
 
 # Coordonnées quartiers
-df_coords = pd.read_csv("quartier.csv")
+df_coords = pd.read_csv("streamlit/quartier.csv")
 print(df_coords)
 
 st.title("💰 Estimation du loyer mensuel")
