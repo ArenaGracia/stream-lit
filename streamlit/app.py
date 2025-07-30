@@ -6,11 +6,11 @@ import folium
 from streamlit_folium import folium_static
 
 # Chargement modèle
-model = joblib.load("/model/model.joblib")
-le = joblib.load("/model/le.joblib")
+model = joblib.load("model.joblib")
+le = joblib.load("le.joblib")
 
 # Coordonnées quartiers
-df_coords = pd.read_csv("./data/quartier.csv")
+df_coords = pd.read_csv("quartier.csv")
 print(df_coords)
 
 st.title("💰 Estimation du loyer mensuel")
