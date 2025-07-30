@@ -6,8 +6,8 @@ import folium
 from streamlit_folium import folium_static
 
 # Chargement modèle
-model = joblib.load("model.joblib")
-le = joblib.load("le.joblib")
+model = joblib.load("streamlit/model.joblib")
+le = joblib.load("streamlit/le.joblib")
 
 # Coordonnées quartiers
 df_coords = pd.read_csv("quartier.csv")
